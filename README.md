@@ -3,7 +3,9 @@ randomorg
 
 Random generator via atmospheric noise [Random.org](http://random.org)
 
-**Current version:** 0.1
+This version includes a User-Agent modification.
+
+**Current version:** 0.2
 
 ### Getting started
 
@@ -13,6 +15,14 @@ Random generator via atmospheric noise [Random.org](http://random.org)
 // generate two 6-side dice rolls
 IntegerGenerator ig = new IntegerGenerator();
 ArrayList<Integer> numbers = ig.generate(1,6,2)
+```
+
+**Double Generator**
+
+``` java
+// generate 27 doubles between 0 and 1
+DoubleGenerator dg = new DoubleGenerator();
+ArrayList<Double> doubles = dg.generate(27)
 ```
 
 **Sequence Generator**
